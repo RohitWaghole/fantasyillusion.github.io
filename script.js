@@ -4,7 +4,7 @@
 const gallery = document.getElementById('gallery');
 const popup = document.getElementById('popup');
 const selectedImage = document.getElementById('selectedImage');
-const imageIndexes = [1,2,19,4,5,6,7,8,9,10,11,12,13,14,15,16,3,17,20,21,22,23,24,25];
+const imageIndexes = [1,2,19,4,5,6,7,8,9,10,11,12,13,14,15,16,3,17,20,21,22,23,24,25,18];
 const selectedIndex = null;
 
 imageIndexes.forEach(i =>{
