@@ -1,0 +1,173 @@
+body{
+    font-family: sans-serif;
+    background: url('bg.jpg');
+    background-size: cover;
+}
+
+
+
+/* FANTASY ILLUSION GALLERY HEADING */
+
+
+h1{
+    display: flex;
+    margin: 20px 100px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(137, 237, 255);
+    /* background-color: rgb(255, 176, 222); */
+    border-radius: 13px;
+    padding: 3px;
+    /* width: 500px; */
+    /* padding-top: 20px; */
+}
+
+
+/* IMAGE GALLERY */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    /* max-width: 1600px; */
+    padding: 50px 40px;
+    /* margin: 23px 50px; */
+    margin: 20px 20px 30px 20px;
+    /* margin: auto; */
+    border: 4px solid rgb(137, 237, 255);
+    /* border: 4px solid rgb(161, 158, 158); */
+    box-shadow: 8px 8px 15px rgb(10, 9, 9);
+}
+
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    grid-gap: 30px;
+}
+
+.galleryImg{
+    max-width: 100%;
+    border-radius: 10px;
+    position: sticky;
+    /* position: relative; */
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+.galleryImg:hover{
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 15px rgb(10, 9, 9);
+}
+
+#popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 250ms transform;
+    padding: 50px;
+}
+
+#selectedImage{
+    max-height: 100%;
+}
+
+
+/* NAVIGATION BAR */
+
+nav{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: sans-serif;
+    /* background-color: rgb(197, 195, 195); */
+    border-radius: 30px;
+    margin: 5px 0;
+    padding: 5px 5px;
+}
+
+nav ul{
+    overflow: auto;
+}
+
+.youtube{
+    float: right;
+}
+
+
+.youtube img{
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 93px;
+}
+
+
+
+nav li a{
+    color: white;
+    text-decoration: none;
+
+
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+
+nav li a:hover{
+    color: rgb(94, 94, 255);
+}
+
+nav li{
+    float: left;
+    list-style: none;
+    margin: 5px 8px;
+}
+
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 93px;
+}
+
+.brand{
+    position: static;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: palegreen;
+}
+
+
+/* .profile{
+    float: right;
+    padding: 8px 39px;
+}
+.profile span{
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+
+/* UPLOADING THE WORK */
+
+/* .upload{
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.upload span{
+    background-color: rgb(185, 247, 185);
+    border: 2px solid rgb(140, 255, 140);
+    border-radius: 13px;
+    padding: 10px;
+}
+ */
